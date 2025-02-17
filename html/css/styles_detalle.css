@@ -59,7 +59,7 @@ figure.image-container {
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
-
+/* Estilos de la imagen de la tarjeta */
 .card-image {
     border-radius: 8px;
     transition: transform 0.3s ease;
@@ -109,11 +109,12 @@ header.container {
     flex-wrap: wrap;
 }
 
+/* Estilos del logo */
 header.container img.logo {
     margin-right: 20px;
 }
 
-/* Estilos de la navegación */
+
 /* centrado del nav */
 nav {
     display: flex;
@@ -132,6 +133,7 @@ nav ul li {
 
 }
 
+/* Diseño de los botones de navegación (<nav_list_1>) */
 .nav_list_1 button {
     background-color: #d66060;
     border: 2px solid transparent;
@@ -147,10 +149,11 @@ nav ul li {
     transition: filter 0.3s ease;
 }
 
+/* Cambiar estilo al pasar el ratón */
 .nav_list_1 button:hover {
     filter: brightness(1.2);
 }
-
+/* Diseño del botón de navegación */
 .nav_list_1 button a {
     color: rgb(170, 168, 168);
     text-decoration: none;
@@ -161,7 +164,7 @@ nav ul li {
 nav ul li a:hover {
     background-color: #d66060;
 }
-
+/* Diseño de la valoración */
 .rating {
     display: flex;
     justify-content: center;
@@ -169,19 +172,15 @@ nav ul li a:hover {
     color: white;
 }
 
-.series-image {
-    width: 25%;
-    border-radius: 1px;
-    transition: transform 0.3s ease;
-}
-
+/* Estilos de la valoración */
 .comment-box {    
     align-items: center;
     color: rgb(255, 255, 255);
     position:relative;
     text-align: justify;
-/* Diseño de las tarjetas */
 }
+
+/* Diseño de las tarjetas */
 
 .card2 {  
     background: #6f5050;
@@ -201,7 +200,7 @@ nav ul li a:hover {
 
     
 }
-
+/* Diseño de los botones */
 }
 button, input[type="submit"] {
     background: linear-gradient(to right, #f2487b, #5a5552);
@@ -213,7 +212,7 @@ button, input[type="submit"] {
     cursor: pointer;
     transition: 0.3s;
 }
-
+/* Cambiar el color del botón al pasar el ratón */
 button:hover, input[type="submit"]:hover {
     background: linear-gradient(to right, #bd4d37, #54423d);
 }
@@ -228,13 +227,13 @@ input[type="text"], input[type="email"], textarea {
     width: 100%;
     box-sizing: border-box;
 }
-
+/* Estilo para los campos de entrada cuando están en foco */
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     background-color: #c0c0c0;
     outline: none;
     border: 2px solid #d66060;
 }
-
+/* Estilo para el botón de envío */
 .titulo {
     color: white;
     font-size: 30px;
