@@ -1,19 +1,17 @@
+/* estilo del body (fuente, color de fondo, margen y relleno) */
 body {
-    font-family: Arial, sans-serif;
+    font-family: open sans, sans-serif;
     background-color: #454242;
     margin: 0;
     padding: 20px;
 }
-
-.container {
-    max-width:300px;
-    margin: auto;
-}
-
+/* margen entre las secciones */
 .group {
     margin-bottom: 40px;
 }
 
+/* estilo de las tarjetas (color de las tarjetas de fondo,
+borde, sombra, margen, relleno, transicion y posicion) */
 .card {
     background: #d66060;
     border-radius: 8px;
@@ -24,27 +22,43 @@ body {
     position: relative;
 }
 
+/* estilo de las tarjetas (flexbox para el diseño, y posiciones) */
+article.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* estilo para el grupo de tarjetas (diseño, definicion de las columnas y espacio entre ellos) */
+section.group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* comportamiento de las tarjetas al pasar el raton por encima */
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     border: 2px solid #ac5858;
 }
 
-.image-container {
-    position: relative;
-    overflow: hidden;
+/* estilo de las imagenes (quitar margen, ancho y alto) */
+figure.image-container {
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
+/* estilo de las imagenes (ancho, esquinas y animacion) */
 .card-image {
     width: 100%;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
-.card:hover .card-image {
-    transform: scale(1.1);
-}
-
-.synopsis {
+/* sinopsis (posiciones, color de fondo y texto, relleno, opacidad y animacion) */
+.sinopsis {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -54,4 +68,61 @@ body {
     padding: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
+}
+
+/* estilo de la valoracion (margen arriba) */
+.rating {
+    margin-top: 10px;
+}
+
+/* (<header>) flexbox para el diseño, alineacion, espacio y al disminuir el tamaño de la imagen
+se pongan en diferentes lineas */
+header.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* (<header>) estilo del logo poniendole un margen a la derecha */
+header.container img.logo {
+    margin-right: 20px;
+}
+
+    /* (<header>) eliminar los puntos de enumeracion */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+    /* (<header>) alinear los elementos */
+nav ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    display: inline-block;
+    cursor: pointer;
+    color: #d66060;
+    font-size: 20px;
+}
+
+    /* (<header>) estilo de los elementos como quitar el subrallado,
+    cambiar el color del texto, fondo, padding, bordes y transicion */
+nav ul li a {
+    text-decoration: none;
+    color: #454242;
+    background-color: #ac5858;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+    /* (<header>) cambiar color de fondo al pasar el raton */
+nav ul li a:hover {
+    background-color: #d66060;
 }
