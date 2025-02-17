@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakamoto Days - Animenjoy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../html/css/styles_detalle.css">
+    <link rel="icon" href="../img/logoAnimenjoy.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <div class="headercont">
+            <img src="../img/logoAnimenjoy.png" alt="Animenjoy" class="logo">
+            <h1 class="titulo">Animenjoy</h1>
+        </div>
+        <nav>
+            <ul class="nav_list_1">
+                <li><button onclick="window.location.href='index.html'"><span class="Home">Home</span></button></li>
+                <li><button onclick="window.location.href='favoritos.html'"><span class="Fav">Favoritos</span></button></li>
+                <li><button onclick="window.location.href='novedades.html'"><span class="News">Novedades</span></button></li>
+                <li><button onclick="window.location.href='estrenos.html'"><span class="Pe">Próximos estrenos</span></button></li>
+            </ul>
+            <ul class="nav_list_2">
+                <li><button onclick="window.location.href='contacto.html'"><span class="C">Contacto</span></button></li>
+                <li><button onclick="window.location.href='perfil.html'"><span class="P">Perfil</span></button></li>
+                <li><button onclick="window.location.href='buscar.html'"><span class="Srch">Buscar</span></button></li>
+                <li><button onclick="window.location.href='logout.html'"><span class="Logout">Cerrar sesión</span></button></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="group" id="estrenos">
+            <h2>Estrenos</h2>
+            <article class="card">
+                <figure class="image-container">
+                    <img src="../img/Img_segundarias/Sakamoto.jpg" alt="Sakamoto Days" class="card-image">
+                    <figcaption class="sinopsis">Taro Sakamoto fue el asesino más temido del mundo, pero se enamoró, se casó y dejó
+                        atrás su vida de violencia para dirigir una tienda de conveniencia. Sin embargo, su pasado no lo
+                        deja en paz y pronto deberá demostrar que, a pesar de su apariencia, sigue siendo el mejor en lo que
+                        hace.</figcaption>
+                </figure>
+                <div class="rating">
+                    <p>Calificación: 4.8/5</p>
+                    <i class="bi bi-star-fill"></i> 
+                    <i class="bi bi-star-fill"></i> 
+                    <i class="bi bi-star-fill"></i> 
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+            </article>
+            <article class="card2">
+                <div class="comment-box">
+                    <p><strong>AlexGamer92 ⭐⭐⭐⭐⭐:</strong> ¡Increíble adaptación! Sakamoto es un personaje único, y la animación hace justicia al manga. Las escenas de acción son fluidas y la comedia está bien equilibrada. ¡Definitivamente lo seguiré viendo!</p>
+                    <p><strong>OtakuMasterX ⭐⭐⭐⭐:</strong> Sakamoto es un personaje increíble. Espero ver más episodios pronto.</p>
+                    <p><strong>AniFan_23 ⭐⭐⭐⭐⭐:</strong> ¡La animación y la historia son impresionantes!</p>
+                    <p><strong>ShonenLover ⭐⭐⭐⭐⭐:</strong> ¡Sakamoto es el GOAT! Nunca pensé que un asesino retirado con sobrepeso pudiera ser tan badass. La mezcla de humor y acción es perfecta.</p>
+                    <p><strong>MangaReader88 ⭐⭐⭐⭐:</strong> ¡La animación y la historia son impresionantes!</p>
+                    <p><strong>ZeroSenpai ⭐⭐⭐⭐⭐:</strong> ¡La animación y la historia son impresionantes!</p>
+                </div>
+                <form class="comment-form">
+                    <textarea placeholder="Escribe tu comentario aquí..."></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>
