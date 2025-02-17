@@ -18,24 +18,132 @@
         </div>
         <nav>
             <ul class="nav_list_1">
-                <li><button onclick="window.location.href=''"><a class="Home">Home</a></li>
-                <li><button onclick="window.location.href=''"><a class="Fav">Favoritos</a></li>
-                <li><button onclick="window.location.href=''"><a class="News">Novedades</a></li>
-                <li><button onclick="window.location.href=''"><a class="Pe">Próximos estrenos</a></li>
-            </ul>
-            <ul class="nav_list_2">
-                <li><button onclick="window.location.href=''"><a class="C">Contacto</a></li>
-                <li><button onclick="window.location.href=''"><a class="P">Perfil</a></li>
-                <li><button onclick="window.location.href=''"><a class="Srch">Buscar</a></li>
-                <li><button onclick="window.location.href=''"><a class="Logout">Cerrar sesión</a></li>
+                <li><button href=""><i class="bi bi-house-fill"></i><a class="Home">Home</a></li>
+                <li><button href=""><i class="bi bi-heart-fill"></i><a class="Fav">Favoritos</a></li>
+                <li><button href=""><i class="bi bi-newspaper"></i><a class="News">Novedades</a></li>
+                <li><button href=""><i class="bi bi-calendar2-week"></i><a class="Pe">Próximos estrenos</a></li>
+                <li><button href=""><i class="bi bi-search"></i><a class="Srch">Buscar</a></li>
+                <li><button href=""><i class="bi bi-telephone-fill"></i><a class="C">Contacto</a></li>
+                <li><button href=""><i class="bi bi-person-fill"></i><a class="P">Perfil</a></li>
+                <li><button href=""><i class="bi bi-box-arrow-right"></i><a class="Logout">Cerrar sesión</a></li>
             </ul>
         </nav>
     </header>
 
-<!--ESTRENOS-->
+    <!--ESTRENOS-->
 
+    <h2 class="section_titles">Estrenos</h2>
+    <div class="carousel-container">
+        <!-- Radio buttons para el control -->
+        <input type="radio" name="carousel" id="slide1" checked>
+        <input type="radio" name="carousel" id="slide2">
+        <input type="radio" name="carousel" id="slide3">
+        <input type="radio" name="carousel" id="slide4">
+        <input type="radio" name="carousel" id="slide5">
+
+        <div class="carousel">
+            <article class="card">
+                <figure class="image-container">
+                    <img src="../img/Estrenos/Sakamoto_Days.jpg" alt="Sakamoto Days" class="card-image">
+                    <figcaption class="sinopsis">Un ex-asesino vive una vida tranquila hasta que su pasado regresa.
+                    </figcaption>
+                </figure>
+                <h3>Sakamoto Days</h3>
+                <div class="rating"></div>
+
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="image-container">
+                    <img src="../img/Estrenos/Dr_Stone_Science_Future.jpg" alt="Dr. Stone: Science Future"
+                        class="card-image">
+                    <figcaption class="sinopsis">Senku y sus amigos descubren nuevos avances en su lucha por la
+                        civilización.</figcaption>
+                </figure>
+                <h3>Dr. Stone: Science Future</h3>
+                <div class="rating"></div>
+
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="image-container">
+                    <img src="../img/Estrenos/Blue_Lock.jpg" alt="Blue Lock" class="card-image">
+                    <figcaption class="sinopsis">El programa de entrenamiento más extremo para encontrar al mejor
+                        delantero.</figcaption>
+                </figure>
+                <h3>Blue Lock</h3>
+                <div class="rating"></div>
+
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="image-container">
+                    <img src="../img/Estrenos/Blue_Exorcist.jpg" alt="Ao no Exorcist: Yosuga-hen" class="card-image">
+                    <figcaption class="sinopsis">Rin Okumura se enfrenta a nuevos desafíos en su camino como exorcista.
+                    </figcaption>
+                </figure>
+                <h3>Ao no Exorcist: Yosuga-hen</h3>
+                <div class="rating"></div>
+
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </article>
+            <article class="card">
+                <figure class="image-container">
+                    <img src="../img/Estrenos/Solo_Leveling.jpg"
+                        alt="Ore dake Level Up na Ken Season 2: Arise from the Shadow" class="card-image">
+                    <figcaption class="sinopsis">Jinwoo Sung sigue evolucionando en un mundo donde solo él sube de
+                        nivel.</figcaption>
+                </figure>
+                <h3>Ore dake Level Up na Ken Season 2: Arise from the Shadow</h3>
+                <div class="rating"></div>
+
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-half"></i>
+                    <i class="bi bi-star"></i>
+                </div>
+            </article>
+        </div>
+
+        <!-- Controles de navegación -->
+        <div class="controls">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+        </div>
+    </div>
+
+
+    <!--
     <section class="group" id="estrenos">
-        <h2>Estrenos</h2>
         <article class="card">
             <figure class="image-container">
                 <img src="../img/Estrenos/Sakamoto_Days.jpg" alt="Sakamoto Days" class="card-image">
@@ -46,7 +154,8 @@
         </article>
         <article class="card">
             <figure class="image-container">
-                <img src="../img/Estrenos/Dr_Stone_Science_Future.jpg" alt="Dr. Stone: Science Future" class="card-image">
+                <img src="../img/Estrenos/Dr_Stone_Science_Future.jpg" alt="Dr. Stone: Science Future"
+                    class="card-image">
                 <figcaption class="sinopsis">Sinopsis de la película 2</figcaption>
             </figure>
             <h3>Dr. Stone: Science Future</h3>
@@ -70,26 +179,31 @@
         </article>
         <article class="card">
             <figure class="image-container">
-                <img src="../img/Estrenos/Solo_Leveling.jpg" alt="Ore dake Level Up na Ken Season 2: Arise from the Shadow"
-                    class="card-image">
+                <img src="../img/Estrenos/Solo_Leveling.jpg"
+                    alt="Ore dake Level Up na Ken Season 2: Arise from the Shadow" class="card-image">
                 <figcaption class="sinopsis">Sinopsis de la película 2</figcaption>
             </figure>
             <h3>Ore dake Level Up na Ken Season 2: Arise from the Shadow</h3>
             <div class="rating"></div>
         </article>
     </section>
-
-<!--SERIES-->
-
+-->
+    <!--SERIES-->
+    <h2 class="section_titles">Series</h2>
     <section class="group" id="series">
-        <h2>Series</h2>
         <article class="card">
             <figure class="image-container">
                 <img src="../img/Series/Tokyo_ghoul.jpg" alt="Tokyo ghoul" class="card-image">
                 <figcaption class="sinopsis">Sinopsis de la serie 1</figcaption>
             </figure>
             <h3>Tokyo ghoul</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
         <article class="card">
             <figure class="image-container">
@@ -97,7 +211,13 @@
                 <figcaption class="sinopsis">Sinopsis de la serie 1</figcaption>
             </figure>
             <h3>Bleach TYBW</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
         <article class="card">
             <figure class="image-container">
@@ -105,7 +225,13 @@
                 <figcaption class="sinopsis">Sinopsis de la serie 1</figcaption>
             </figure>
             <h3>Death note</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
         <article class="card">
             <figure class="image-container">
@@ -113,7 +239,13 @@
                 <figcaption class="sinopsis">Sinopsis de la serie 1</figcaption>
             </figure>
             <h3>Fire force</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
         <article class="card">
             <figure class="image-container">
@@ -121,21 +253,32 @@
                 <figcaption class="sinopsis">Sinopsis de la serie 1</figcaption>
             </figure>
             <h3>Jujutsu Kaisen</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
     </section>
 
-<!--PELICULAS-->
-
+    <!--PELICULAS-->
+    <h2 class="section_titles">Películas</h2>
     <section class="group" id="peliculas">
-        <h2>Películas</h2>
         <article class="card">
             <figure class="image-container">
                 <img src="../img/Peliculas/Jujutsu_Kaisen_0.jpg" alt="Jujutsu Kaisen 0 Movie" class="card-image">
                 <figcaption class="sinopsis">Sinopsis de la película 4</figcaption>
             </figure>
             <h3>Jujutsu Kaisen 0 Movie</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
         <article class="card">
             <figure class="image-container">
@@ -143,15 +286,28 @@
                 <figcaption class="sinopsis">Sinopsis de la película 4</figcaption>
             </figure>
             <h3>Blue Lock: Episode Nagi</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
         <article class="card">
             <figure class="image-container">
-                <img src="../img/Peliculas/Watashi_ni_Tenshi.jpg" alt="Watashi ni Tenshi ga Maiorita! Precious Friends" class="card-image">
+                <img src="../img/Peliculas/Watashi_ni_Tenshi.jpg" alt="Watashi ni Tenshi ga Maiorita! Precious Friends"
+                    class="card-image">
                 <figcaption class="sinopsis">Sinopsis de la película 4</figcaption>
             </figure>
             <h3>Watashi ni Tenshi ga Maiorita! Precious Friends</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
         <article class="card">
             <figure class="image-container">
@@ -159,7 +315,13 @@
                 <figcaption class="sinopsis">Sinopsis de la película 4</figcaption>
             </figure>
             <h3>Kimi no Na wa (Your Name)</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
         <article class="card">
             <figure class="image-container">
@@ -167,7 +329,13 @@
                 <figcaption class="sinopsis">Sinopsis de la película 4</figcaption>
             </figure>
             <h3>Koe no Katachi (A Silent Voice)</h3>
-            <div class="rating"></div>
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-half"></i>
+                <i class="bi bi-star"></i>
+            </div>
         </article>
     </section>
 </body>
