@@ -1,50 +1,91 @@
+/* estilo del body (fuente, color de fondo, margen y relleno) */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #454242;
+    font-family: open sans, sans-serif;
     margin: 0;
     padding: 20px;
+    place-items: center;
+    background: linear-gradient(to bottom,
+            #454242 0%,
+            #d66060 100%);
+
+    height: 250vh;
+    margin: 0;
 }
 
-.container {
-    max-width:300px;
-    margin: auto;
-}
-
+/* margen entre las secciones */
 .group {
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center, space-between;
 }
 
+/* estilo del texto, titulo antes de las tarjetas, section */
+.section_titles {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d66060;
+    text-shadow:
+        -1px -1px 0 #333030,
+        1px -1px 0 #333030,
+        -1px 1px 0 #333030,
+        1px 1px 0 #333030;
+}
+
+/* estilo de las tarjetas (color de las tarjetas de fondo,
+borde, sombra, margen, relleno, transicion y posicion) */
 .card {
     background: #d66060;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 20px;
-    padding: 20px;
+    margin: 50px;
+    padding: 30px;
     transition: box-shadow 0.3s ease;
     position: relative;
+    overflow: hidden;
+    width: 200px;
+    flex: 1 1 30%;
+    box-sizing: border-box;
 }
 
+/* estilo de las tarjetas (flexbox para el diseño, y posiciones) */
+article.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* estilo para el grupo de tarjetas (diseño, definicion de las columnas y espacio entre ellos) */
+section.group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: flex;
+}
+
+/* comportamiento de las tarjetas al pasar el raton por encima */
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     border: 2px solid #ac5858;
 }
 
-.image-container {
-    position: relative;
-    overflow: hidden;
+/* estilo de las imagenes (quitar margen, ancho y alto) */
+figure.image-container {
+    margin: 0;
+    width: 100%;
+    height: auto;
 }
 
+/* estilo de las imagenes (ancho, esquinas y animacion) */
 .card-image {
     width: 100%;
     border-radius: 8px;
     transition: transform 0.3s ease;
 }
 
-.card:hover .card-image {
-    transform: scale(1.1);
-}
-
-.synopsis {
+/* sinopsis (posiciones, color de fondo y texto, relleno, opacidad y animacion) */
+.sinopsis {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -54,4 +95,269 @@ body {
     padding: 10px;
     opacity: 0;
     transition: opacity 0.3s ease;
+}
+
+/* estilo de la valoracion (margen arriba) */
+.rating {
+    margin-top: 10px;
+}
+
+/* ponemos margen superior en los estrenos */
+#estrenos {
+    margin-top: 70px;
+}
+
+/* iluminacion del box */
+
+@keyframes highlight {
+    0% {
+        box-shadow: 0 0 5px rgba(253, 253, 253, 0.5);
+    }
+
+    50% {
+        box-shadow: 0 0 15px rgba(253, 253, 253, 0.5);
+    }
+
+    100% {
+        box-shadow: 0 0 5px rgba(253, 253, 253, 0.5);
+    }
+}
+/* eliminar estilo de hyperenlace */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* estilo del header */
+header {
+    margin-bottom: 70px;
+    width: 100%;
+    background-color: #8f6262;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    animation: highlight 1.5s infinite;
+}
+
+header:hover {
+    animation: highlight 1.5s infinite;
+    ;
+}
+
+/* estilo del texto de acompañamiento de la imagen, título */
+.headercont {
+    display: flex;
+    align-items: center;
+    color: #d66060;
+    text-shadow:
+        -1px -1px 0 #333030,
+        1px -1px 0 #333030,
+        -1px 1px 0 #333030,
+        1px 1px 0 #333030;
+}
+
+/* estilo de la imagen, logo */
+.logo {
+    margin-left: 20px;
+}
+
+/* (<header>) flexbox para el diseño, alineacion, espacio y al disminuir el tamaño de la imagen
+se pongan en diferentes lineas */
+header.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* (<header>) estilo del logo poniendole un margen a la derecha */
+header.container img.logo {
+    margin-right: 20px;
+}
+
+/* centrado del nav */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* (<header>) eliminar los puntos de enumeracion */
+nav ul {
+    list-style: none;
+    margin-right: 20px;
+}
+
+/* (<header>) alinear los elementos */
+nav ul li {
+    display: inline-flex;
+
+}
+
+.nav_list_1 button {
+    background-color: #d66060;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: rgb(170, 168, 168);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 0 2px #9c7474;
+    margin: 5px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.nav_list_1 button:hover {
+    filter: brightness(1.2);
+}
+
+.nav_list_1 button a {
+    color: rgb(170, 168, 168);
+    text-decoration: none;
+    margin-left: 5px;
+}
+
+/* (<header>) cambiar color de fondo al pasar el raton */
+nav ul li a:hover {
+    background-color: #d66060;
+}
+
+
+/* css del carroussel */
+input {
+    display: none;
+}
+
+/* Control de navegación */
+.controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.controls label {
+    width: 12px;
+    height: 12px;
+    background: black;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.3s;
+}
+
+.controls label:hover {
+    opacity: 1;
+}
+
+.carousel-container {
+    width: 350px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.carousel {
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Lógica para mover el carrusel */
+#slide1:checked~.carousel {
+    transform: translateX(0%);
+}
+
+#slide2:checked~.carousel {
+    transform: translateX(-20%);
+}
+
+#slide3:checked~.carousel {
+    transform: translateX(-40%);
+}
+
+#slide4:checked~.carousel {
+    transform: translateX(-60%);
+}
+
+#slide5:checked~.carousel {
+    transform: translateX(-80%);
+}
+
+/* Resaltar el botón activo */
+#slide1:checked~.controls label[for="slide1"],
+#slide2:checked~.controls label[for="slide2"],
+#slide3:checked~.controls label[for="slide3"],
+#slide4:checked~.controls label[for="slide4"],
+#slide5:checked~.controls label[for="slide5"] {
+    opacity: 1;
+}
+
+/* estilo para pantallas pequeñas o moviles 333 */
+@media (max-width: 480px) {
+    .headercont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_list_1 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav_list_1 li {
+        margin: 10px 0;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+    }
+    .group {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center, space-between;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 100%;
+        margin: 10px 0;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+    }
+}
+
+/* Estilos para pantallas medianas 111 */
+@media (min-width: 480px) and (max-width: 1024px) {
+    .headercont {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav_list_1 {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .group {
+        display: flex;
+        justify-content: center, space-between;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 45%;
+        margin: 10px;
+        flex: 1 1 45%;
+    }
+}
+
+/* Estilos para pantallas grandes pc escritorio 222 */
+@media (min-width: 1025px) {
+    .card {
+        width: 30%;
+        margin: 15px;
+        flex: 1 1 30%;
+    }
 }
