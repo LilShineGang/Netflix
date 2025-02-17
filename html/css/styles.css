@@ -122,7 +122,11 @@ figure.image-container {
         box-shadow: 0 0 5px rgba(253, 253, 253, 0.5);
     }
 }
-
+/* eliminar estilo de hyperenlace */
+a {
+    text-decoration: none;
+    color: inherit;
+}
 /* estilo del header */
 header {
     margin-bottom: 70px;
@@ -290,6 +294,8 @@ input {
 #slide5:checked~.controls label[for="slide5"] {
     opacity: 1;
 }
+
+/* estilo para pantallas pequeñas o moviles 333 */
 @media (max-width: 480px) {
     .headercont {
         flex-direction: column;
@@ -322,7 +328,7 @@ input {
     }
 }
 
-/* Estilos para pantallas medianas (tabletas) */
+/* Estilos para pantallas medianas 111 */
 @media (min-width: 480px) and (max-width: 1024px) {
     .headercont {
         flex-direction: row;
@@ -347,7 +353,7 @@ input {
     }
 }
 
-/* Estilos para pantallas grandes (escritorios) */
+/* Estilos para pantallas grandes pc escritorio 222 */
 @media (min-width: 1025px) {
     .card {
         width: 30%;

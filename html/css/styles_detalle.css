@@ -69,12 +69,12 @@ figure.image-container {
     
 }
 
-/* Sinopsis */                                                                      
+/* Sinopsis */
 .sinopsis {
     position: absolute;
     width: 350px;;
     bottom: 0;
-    left: 100px;    
+    left: 100px;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
     color: rgb(255, 255, 255);
@@ -241,4 +241,71 @@ input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     margin: 0;
     padding: 0;
     text-align: center;
+}
+
+/* estilo para pantallas pequeñas o moviles 333 */
+@media (max-width: 480px) {
+    .headercont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_list_1 {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .nav_list_1 li {
+        margin: 10px 0;
+    }
+
+    .carousel-container {
+        flex-direction: column;
+    }
+    .group {
+        margin-bottom: 40px;
+        display: flex;
+        justify-content: center, space-between;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 100%;
+        margin: 10px 0;
+        flex: 1 1 100%;
+        flex-wrap: wrap;
+    }
+}
+
+/* estilos para pantallas medianas 111 */
+@media (min-width: 480px) and (max-width: 1024px) {
+    .headercont {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav_list_1 {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    .group {
+        display: flex;
+        justify-content: center, space-between;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: 45%;
+        margin: 10px;
+        flex: 1 1 45%;
+    }
+}
+
+/* estilos para pantallas grandes pc escritorio 222 */
+@media (min-width: 1025px) {
+    .card {
+        width: 30%;
+        margin: 15px;
+        flex: 1 1 30%;
+    }
 }
